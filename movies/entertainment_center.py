@@ -27,7 +27,12 @@ wall_e = media.Movie("Wall-E",
 					 "https://img.yescdn.ru/2015/09/15/poster/WALL-E_1.jpg",
 					 "https://www.youtube.com/watch?v=ZAWIIlXNGwY")
 
-movies = [toy_story, avatar, inception, zootopia, wall_e]
+forrest_gump = media.Movie("Forrest Gump",
+						   "Autistic man lives through numerous historical events",
+						   "http://www.impawards.com/1994/posters/forrest_gump_xlg.jpg",
+						   "https://www.youtube.com/watch?v=bLvqoHBptjg")
+
+movies = [toy_story, avatar, inception, zootopia, wall_e, forrest_gump]
 fresh_tomatoes.open_movies_page(movies)
 
 
