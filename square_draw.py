@@ -1,9 +1,9 @@
 import turtle
 
-def draw_square():
-    window = turtle.Screen()
-    window.bgcolor("red")
+window = turtle.Screen()
+window.bgcolor("red")
 
+def draw_square():
     squareArtist = turtle.Turtle()
     squareArtist.speed(3)
     squareArtist.color("blue")
@@ -13,6 +13,14 @@ def draw_square():
         squareArtist.forward(100)
         squareArtist.right(90)
 
-    window.exitonclick()
+def draw_circle():
+    circleArtist = turtle.Turtle()
+    circleArtist.speed(3)
+    circleArtist.color("yellow")
+    circleArtist.shape("turtle")
+
+    circleArtist.circle(100)
 
 draw_square()
+draw_circle()
+window.exitonclick()
