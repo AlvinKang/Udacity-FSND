@@ -21,6 +21,18 @@ def draw_circle():
 
     circleArtist.circle(100)
 
+def draw_triangle():
+    triangleArtist = turtle.Turtle()
+    triangleArtist.speed(3)
+    triangleArtist.color("white")
+    triangleArtist.shape("arrow")
+
+    for i in range(3):
+        triangleArtist.forward(100)
+        triangleArtist.right(120)
+    
+
 draw_square()
 draw_circle()
+draw_triangle()
 window.exitonclick()
