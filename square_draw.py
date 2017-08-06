@@ -3,15 +3,19 @@ import turtle
 window = turtle.Screen()
 window.bgcolor("red")
 
-def draw_square():
+def draw_square(degrees):
     squareArtist = turtle.Turtle()
     squareArtist.speed(3)
     squareArtist.color("blue")
     squareArtist.shape("classic")
-    
-    for i in range(4):
-        squareArtist.forward(100)
-        squareArtist.right(90)
+
+    # Draws a full-circle's number of squares
+    num_times = 360 / degrees
+    for i in range(num_times):
+        for j in range(4):
+            squareArtist.forward(100)
+            squareArtist.right(90)
+        squareArtist.right(degrees)
 
 def draw_circle():
     circleArtist = turtle.Turtle()
@@ -32,7 +36,7 @@ def draw_triangle():
         triangleArtist.right(120)
     
 
-draw_square()
-draw_circle()
-draw_triangle()
+draw_square(10)
+#draw_circle()
+#draw_triangle()
 window.exitonclick()
